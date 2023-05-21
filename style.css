@@ -4,6 +4,11 @@
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
 }
+#congrats{
+  display: none;
+  text-align: center;
+  color: chocolate;
+}
 /* .grid-item{
     border: 2px solid salmon;
 } */

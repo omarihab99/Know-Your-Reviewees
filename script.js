@@ -119,6 +119,8 @@ function saveContent() {
     parseReviewPairs(reviewers);
     var d = document.getElementById("grid");
     d.style.display = 'grid';
+    var c = document.getElementById("congrats");
+    c.style.display = 'block';
     // TODO: parsing result array to get team names
   } else {
     alert("Please enter a valid name");
