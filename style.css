@@ -1,0 +1,36 @@
+.grid-container {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+/* .grid-item{
+    border: 2px solid salmon;
+} */
+#week_1{
+  background-color: aqua;
+}
+#week_2{
+  background-color: rgb(148, 201, 152);
+}
+#week_3{
+  background-color: rgb(227, 228, 146);
+}
+#week_4{
+  background-color: rgb(93, 152, 179);
+}
+#week_5{
+  background-color: rgb(142, 93, 147);
+}
+#week_6{
+  background-color: rgb(200, 122, 175);
+}
+#week_7{
+  background-color: rgb(200, 9, 44);
+}
+#week_8{
+  background-color: rgb(255, 183, 0);
+}
+#week_9{
+  background-color: rgb(51, 104, 5);
+}
