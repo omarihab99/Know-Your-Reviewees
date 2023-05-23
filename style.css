@@ -1,41 +1,110 @@
-.grid-container {
-  display: none;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-}
 #congrats{
-  display: none;
   text-align: center;
   color: chocolate;
+  
 }
-/* .grid-item{
-    border: 2px solid salmon;
-} */
-#week_1{
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+h1,
+h4 {
+  text-align: center;
+}
+p {
+  margin: 1%;
+}
+table {
+  width: 100%;
+  border: 1px solid black;
+}
+th:nth-child(1) {
+  width: 10%;
+}
+th:nth-child(1), th:nth-child(2), th:nth-child(3){
+  width:30%;
+}
+.table-container {
+  display: none;
+  
+  margin: 2% 20%;
+  margin-bottom: 1%;
+}
+
+#download{
+  height: fit-content;
+  margin-bottom: 5%;
+  margin-left: 0 !important;
+}
+.ending-container{
+  display: none;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+footer{
+  margin-top: auto;
+  background-color: black;
+}
+footer p{
+  color: white;
+}
+footer a{
+  color: greenyellow;
+}
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+.week_1 {
   background-color: aqua;
 }
-#week_2{
+.week_2 {
   background-color: rgb(148, 201, 152);
 }
-#week_3{
+.week_3 {
   background-color: rgb(227, 228, 146);
 }
-#week_4{
+.week_4 {
   background-color: rgb(93, 152, 179);
 }
-#week_5{
+.week_5 {
   background-color: rgb(142, 93, 147);
 }
-#week_6{
+.week_6 {
   background-color: rgb(200, 122, 175);
 }
-#week_7{
+.week_7 {
   background-color: rgb(200, 9, 44);
 }
-#week_8{
+.week_8 {
   background-color: rgb(255, 183, 0);
 }
-#week_9{
+.week_9 {
   background-color: rgb(51, 104, 5);
 }
