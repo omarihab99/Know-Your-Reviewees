@@ -12,7 +12,7 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"></script>
-
+      <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
    <script src="script.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
@@ -69,6 +69,7 @@
       </button>
    </form>
    <div class="table-container">
+      <input type="text" id="filter" class="form-control" placeholder="Search..." onkeyup="filterTable()">
       <table class="table table-striped" id="reviewees-table">
          <thead>
             <tr class="table-light">
@@ -78,7 +79,7 @@
                <th>Reviewee 2</th>
             </tr>
          </thead>
-         <tbody>
+         <tbody id="reviewees-table-body">
             <tr class="week_1">
                <td>1</td>
                <td></td>

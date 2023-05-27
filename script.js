@@ -178,6 +178,23 @@ function saveContent() {
   }
 }
 /**
+ * Filters a table based on user input.
+ *
+ * @param {event} - The event that triggers the filter function.
+ * @return {void} - This function does not return anything.
+ */
+function filterTable(){
+  $(document).ready(function() {
+    $('#filter').keyup(function() {
+      var search = $(this).val().toLowerCase();
+      $('#reviewees-table-body tr').filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(search) > -1)
+      });
+    });
+  })
+
+}
+/**
  * Downloads a PDF of the reviewees table.
  *
  * @return {void} Nothing is returned.
